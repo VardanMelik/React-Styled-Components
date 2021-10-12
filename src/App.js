@@ -1,4 +1,5 @@
 import { Navbar } from './components';
+import Footer from './components/Footer/Footer'
 import GlobalStyle from './globalStyles';
 import { 
   BrowserRouter as Router, 
@@ -15,6 +16,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home}/>
       </Switch>
+      <Footer/>
     </Router>
   );
 }
