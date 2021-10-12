@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../../globalStyles'; 
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa'
 import {
     FooterContainer,
     FooterSubscription,
@@ -9,9 +10,16 @@ import {
     FormInput,
     FooterLinksContainer,
     FooterLinksWrapper,
-    FooterLinksItems,
+    FooterLinksItem,
     FooterLinkTitle,
-    FooterLink
+    FooterLink,
+    SocialIconLink,
+    SocialMedia,
+    SocialMediaWrap,
+    SocialLogo,
+    SocialIcon,
+    SocialIcons,
+    WebsiteRights
 } from './Footer.elements';
 
 const Footer = () => {
@@ -38,41 +46,43 @@ const Footer = () => {
             </FooterSubscription>
             <FooterLinksContainer>
                 <FooterLinksWrapper>
-                    <FooterLinksItems>
+                    <FooterLinksItem>
                         <FooterLinkTitle>About Us</FooterLinkTitle>
                         <FooterLink to="/">How it works</FooterLink>
                         <FooterLink to="/">Testimonials</FooterLink>
                         <FooterLink to="/">Careers</FooterLink>
                         <FooterLink to="/">Investors</FooterLink>
                         <FooterLink to="/">Term of Services</FooterLink>
-                    </FooterLinksItems>
+                    </FooterLinksItem>
 
-                    <FooterLinksItems>
+                    <FooterLinksItem>
                         <FooterLinkTitle>Contact Us</FooterLinkTitle>
                         <FooterLink to="/">How it works</FooterLink>
                         <FooterLink to="/">Testimonials</FooterLink>
                         <FooterLink to="/">Careers</FooterLink>
                         <FooterLink to="/">Investors</FooterLink>
                         <FooterLink to="/">Term of Services</FooterLink>
-                    </FooterLinksItems>
+                    </FooterLinksItem>
+                </FooterLinksWrapper>
 
-                    <FooterLinksItems>
+                <FooterLinksWrapper>
+                    <FooterLinksItem>
                         <FooterLinkTitle>Videos</FooterLinkTitle>
                         <FooterLink to="/">How it works</FooterLink>
                         <FooterLink to="/">Testimonials</FooterLink>
                         <FooterLink to="/">Careers</FooterLink>
                         <FooterLink to="/">Investors</FooterLink>
                         <FooterLink to="/">Term of Services</FooterLink>
-                    </FooterLinksItems>
+                    </FooterLinksItem>
 
-                    <FooterLinksItems>
+                    <FooterLinksItem>
                         <FooterLinkTitle>Social Media</FooterLinkTitle>
                         <FooterLink to="/">How it works</FooterLink>
                         <FooterLink to="/">Testimonials</FooterLink>
                         <FooterLink to="/">Careers</FooterLink>
                         <FooterLink to="/">Investors</FooterLink>
                         <FooterLink to="/">Term of Services</FooterLink>
-                    </FooterLinksItems>
+                    </FooterLinksItem>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
             <SocialMedia>
@@ -85,14 +95,24 @@ const Footer = () => {
                         ULTRA 2021
                     </WebsiteRights>
                     <SocialIcons>
-                        <SocialIconLink href="/" targer="_blank" aria-label="Facebook">
+                        <SocialIconLink href="https://www.facebook.com/" targer="_blank" aria-label="Facebook">
                             <FaFacebook/>
                         </SocialIconLink>
-                        <SocialIconLink href="/" targer="_blank" aria-label="Instagram">
+
+                        <SocialIconLink href="https://www.instagram.com/" targer="_blank" aria-label="Instagram">
                             <FaInstagram/>
                         </SocialIconLink>
-                        <SocialIconLink href="/" targer="_blank" aria-label="Youtube">
+
+                        <SocialIconLink href="https://www.youtube.com/" targer="_blank" aria-label="Youtube" rel="noopener noreferret">
                             <FaYoutube/>
+                        </SocialIconLink>
+
+                        <SocialIconLink href="https://twitter.com/" targer="_blank" aria-label="Twitter">
+                            <FaTwitter/>
+                        </SocialIconLink>
+
+                        <SocialIconLink href="https://www.linkedin.com/" targer="_blank" aria-label="LinkedIn">
+                            <FaLinkedin/>
                         </SocialIconLink>
                     </SocialIcons>
                 </SocialMediaWrap>
